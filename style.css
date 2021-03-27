@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-/* RESETANDO AS CONFIGURAÇÕES DO NAVEGADOR*/
+/* ============ RESETANDO AS CONFIGURAÇÕES DO NAVEGADOR ============ */
 
 * {
     box-sizing: border-box;
@@ -22,7 +22,7 @@ a {
 }
 
 
-/* INICIANDO A ESTILIZAÇÃO*/
+/* ============ INICIANDO A ESTILIZAÇÃO ============ */
 
 header {
     height: calc(100vh - 150px);
