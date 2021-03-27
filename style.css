@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/* RESETANDO AS CONFIGURAÇÕES DO NAVEGADOR*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* INICIANDO A ESTILIZAÇÃO*/
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url("./imagens/header-image.jpg");
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+.header-content button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #135BE4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.pacotes {
+    background: #e5e5e5;
+    padding: 25px;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content h1 {
+    margin-bottom: 7px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: grey;
+}
+
+.pacotes .card-content ul li span {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.pacotes .card-content ul li svg {
+    width: 16px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 0.8rem;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #FC9704;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 160px;
+    background: #135BE4;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.services {
+    padding: 15px;
+}
+
+.services .services-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.services .services-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.services .card svg {
+    width: 60px;
+    height: 50px;
+    margin: 40px;
+}
+
+.services .card svg:hover {
+    stroke: #135BE4;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.services .card h3 {
+    font-weight: bold;
+}
+
+.services .card p {
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.services .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.services button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #135BE4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+.contato {
+    padding: 60px;
+    background: #e5e5e5;
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    border-radius: 8px;
+    z-index: 99;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28)
+}
+
+.contato .contato-card h1 {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.contato .contato-card li {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card svg {
+    width: 16px;
+    margin: 10px;
+}
+
+
+/* ======== RESPONSIVIDADE ======== */
+
+
+/* Large desktop */
+
+@media (min-width: 1097px) {
+    header nav {
+        margin: auto 70px;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+
+/* Especial for map */
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {}
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 99;
+        background: #135BE4;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+}
